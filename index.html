@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="title" style="color: red">
+        <h1>this statistic is not real</h1>
+    </div>
+    <div class="drag__table">
+        <table class="styled-table wrapper">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Player</th>
+                    <th>Role</th>
+                    <th>Golas</th>
+                    <th>Minutes</th>
+                    <th>Games</th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr draggable="true" ondragstart="dragit(event)" ondragover="dragover(event)">
+                    <td draggable="false">1</td>
+                    <td>Erling Haaland</td>
+                    <td>attack</td>
+                    <td>28</td>
+                    <td>2120</td>
+                    <td>26</td>
+                </tr>
+                <tr draggable="true" ondragstart="dragit(event)" ondragover="dragover(event)">
+                    <td>2</td>
+                    <td>Harry Kane</td>
+                    <td>attack</td>
+                    <td>28</td>
+                    <td>2508</td>
+                    <td>28</td>
+                    <td></td>
+                </tr>
+                <tr draggable="true" ondragstart="dragit(event)" ondragover="dragover(event)">
+
+
+                    <td>3</td>
+                    <td>Marcus Rashford</td>
+                    <td>attack</td>
+                    <td>2300</td>
+                    <td>25</td>
+                    <td>27</td>
+                </tr>
+                <tr draggable="true" ondragstart="dragit(event)" ondragover="dragover(event)">
+                    <td>4</td>
+                    <td>Hector Bellerin</td>
+                    <td>defender</td>
+                    <td>2800</td>
+                    <td>29</td>
+                </tr>
+
+                <tr draggable="true" ondragstart="dragit(event)" ondragover="dragover(event)">
+                    <td>5</td>
+                    <td>Urakov Mirjalol</td>
+                    <td>Midfielder</td>
+                    <td>2130</td>
+                    <td>19</td>
+                    <td>27</td>
+                </tr>
+                <tr draggable="true" ondragstart="dragit(event)" ondragover="dragover(event)">
+                    <td>6</td>
+                    <td>Jordi Alba</td>
+                    <td>2894</td>
+                    <td>defender</td>
+                    <td>14</td>
+                    <td>29</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
